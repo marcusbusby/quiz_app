@@ -3,38 +3,56 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/stylesheet.css">
-	<title>Quiz App</title>
+	<title>Nutrition Quiz</title>
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<h1>Here's The Quiz!</h1>
+	<h1>let's see how much you know about nutrition</h1>
 
-<div class='button' id='q0'>click to begin</div>
+<div class='stbutton' id='q0'>click here to begin</div>
+
 <div class='question' id='q1'>
-	<p>question1</p>
-	<div class = 'button 1'>a</div>
-	<div class = 'button 2' id = 'correct'>b</div>
-	<div class = 'button 3'>c</div>
-	<div class = 'button 4'>d</div>
+	<p>What are the essential nutrients?</p>
+	<div class = 'button 1'>Carbohydrates, Sugars, Starches, Protein, Vitamins, Water</div>
+	<div class = 'button 2' id = 'correct'>Carbohydrates, Protein, Fat, Vitamins, Minerals, Water</div>
+	<div class = 'button 3'>Carbohydrates, Sugar, Protein, Vitamins, Minerals, Water</div>
+	<div class = 'button 4'>Sugar, Starches, Protein, Vitamins, Minerals, Water, </div>
 </div>
 
 <div class='question' id='q2'>
-	<p>question2</p>
-	<div class = 'button 1'>a</div>
-	<div class = 'button 2'>b</div>
-	<div class = 'button 3'>c</div>
-	<div class = 'button 4' id = 'correct'>d</div>
+	<p>Which is Better: Saturated or Unsaturated Fats?</p>
+	<div class = 'button 1'>saturated</div>
+	<div class = 'button 2' id = 'correct'>unsaturated</div>
+	<div class = 'button 3'>they're about the same, pretty healthy</div>
+	<div class = 'button 4'>they're about the same, pretty unhealthy</div>
 </div>
 
 <div class='question' id='q3'>
-	<p>question3</p>
-	<div class = 'button 1'>a</div>
-	<div class = 'button 2'>b</div>
-	<div class = 'button 3' id = 'correct'>c</div>
-	<div class = 'button 4'>d</div>
+	<p>What types of carbohydrates are quickest to be used up by the body?</p>
+	<div class = 'button 1'>starches</div>
+	<div class = 'button 2'>fibers</div>
+	<div class = 'button 3' id = 'correct'>sugars</div>
+	<div class = 'button 4'>amino acids</div>
 </div>
 
-<div class = "score"></div>
+<div class='question' id='q4'>
+	<p>How much sugar do you need in your daily diet?</p>
+	<div class = 'button 1'>30g</div>
+	<div class = 'button 2'>60g</div>
+	<div class = 'button 3'>90g</div>
+	<div class = 'button 4' id = 'correct'>only when necessary</div>
+</div>
+
+<div class='question' id='q5'>
+	<p>Which of these is known to boost brain power?</p>
+	<div class = 'button 1'>vitamin c</div>
+	<div class = 'button 2' id = 'correct'>omega-3 fatty acids</div>
+	<div class = 'button 3'>saturated fat</div>
+	<div class = 'button 4'>vitamin b</div>
+</div>
+
+<div class = "question score"></div>
 </body>
 </html>

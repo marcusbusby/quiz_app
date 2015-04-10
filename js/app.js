@@ -1,19 +1,25 @@
 $(document).ready(function () {
-var qNum = 0;
+var qNum = 1;
 var totalScore = 0;
+	$(".stbutton").on('click', function() {
+		$('.stbutton').fadeOut(500);
+		$('#q'+ qNum).fadeIn(1000)
+	})
 
 
 	$(".button").on('click', function() {
-		$('#q'+ qNum).hide();
+		$('#q'+ qNum).fadeOut(500);
+		//$('#q'+ qNum).hide();
 		//console.log("#"+qNum);
 		qNum += 1;
-		$('#q'+ qNum).show();
+		$('#q'+ qNum).fadeIn(1000);
+		//$('#q'+ qNum).show();
 		//console.log("#"+qNum);
 		//console.log(this.id);
 		if(this.id == "correct") {
 			totalScore += 20;
 		};
-		if(qNum == 4) {
+		if(qNum == 6) {
 			finish(totalScore);
 			//console.log(totalScore);
 		};
@@ -21,7 +27,7 @@ var totalScore = 0;
 
 	function finish(score) {
 		$(".score").show();
-		$(".score").html("<p>congrats, you scored a "+score+" on this quiz</p>");
+		$(".score").html("<p>you scored a "+score+" on this quiz</p>");
 	};
 
 });
